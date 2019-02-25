@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: url("http://www.forumdaily.com/wp-content/uploads/2016/05/%D0%A1%D0%B0%D0%BD-%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%81%D0%BA%D0%BE-wallpaperdrop.com-wp-content-uploads-2015-06-san_francisco_skyline_wallpapers_.jpg");
+  background-size: 100% 100%;
+}
+div {
+  height: 360px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: cyan;
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  color: blue;
+  margin: 0px 0 70px 0;
+}
+h3 {
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255,0,0);
+  margin: 0px 0 70px 0;
+}
+ul {
+      padding: 0px;
+      text-align: center;
+}
+li {
+      display: inline;
+      padding: 0px 50px 0px 50px;
+      font-family: 'Inconsolata', monospace;
+}
+p {
+  font-family: 'Acme', sans-serif;
+  color: orange;
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(128,128,128,1), rgba(128,128,128,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(128,128,128,.4));
+  padding: 20px;
+  line-height: 20px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .6s;
+  -webkit-transition: height .6s;
+  -moz-transition: height .6s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  h3 {
+    font-size: 30px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 17px;
+  }
+}
+
+</style>
+
+</head>
+
+
+    
+<body>
+
+<ul>
+  <li><button onclick=Mystery()>Mystery</button></li>
+  <li><button onclick=Newspapers()>Newspapers</button></li>
+  <li><button onclick=Drama()>Drama</button></li>
+</ul>
+
+<h1>Swan's Book Shop</h1>
+<h2>Books Of New York City</h2>
+<h3> Discounts Available!!!</h3>
+
+<div id="boo"></div>
+
+<script>
+
+mysteryImages = [
+      'url("https://images.theconversation.com/files/207374/original/file-20180221-132642-1uujcbr.jpg?ixlib=rb-1.1.0&rect=103%2C214%2C4489%2C2244&q=45&auto=format&w=1356&h=668&fit=crop")',
+      'url("https://www.adazing.com/wp-content/uploads/2013/03/LOTR14.png")',
+      'url("https://i.pinimg.com/originals/77/70/f9/7770f9a21a84df540e231f480e1f9b6c.jpg")',
+]
+
+newspapersImages = [
+  'url("https://www.zerohedge.com/sites/default/files/images/user230519/imageroot/2016/11/09/2016.11.09%20-%20Papers%202.jpg")',
+  'url("https://s.yimg.com/ny/api/res/1.2/NLrMTfmcqYuZsSdsLuH97w--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NjMwO2g9NDY2O2lsPXBsYW5l/http://media.zenfs.com/en/blogs/thelookout/colorado-newspapers.jpg")',
+  'url("https://www.zerohedge.com/sites/default/files/images/user230519/imageroot/2016/11/09/2016.11.09%20-%20Papers%201.jpg")',
+]
+
+dramasImages = [
+  'url("https://3oecq13pb7a518hqscs13jv9-wpengine.netdna-ssl.com/wp-content/uploads/2014/12/romeo-and-juliet.jpg")',
+  'url("https://images-na.ssl-images-amazon.com/images/I/812WLoht5YL.jpg")',
+  'url("https://pro2-bar-s3-cdn-cf.myportfolio.com/917f6d3c515079e48da4d0c714d0cfde/82980c05cdb59772530a3f6a_rw_1200.jpg?h=5b99358b97a9d572b0ab27096ae935a8")',
+]
+
+mysteryDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Harry Potter<span class="price">$5 (40% off) </span><br /><small> Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")> <p>The Lord of Rings<span class="price">$6 (40% off) </span><br /><small>The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien. The story began as a sequel to Tolkiens 1937 fantasy novel The Hobbit, but eventually developed into a much larger work. </small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Percy Jackson<span class="price">$5 (40% off) </span><br /><small>Percy Jackson & the Olympians, often shortened to Percy Jackson, is a pentalogy of fantasy adventure novels written by American author Rick Riordan, and the first book series in the Camp Half-Blood Chronicles. Five supplementary books, along with three graphic novels, have also been released.</small></p></div>',
+]
+
+newspaperDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Political Newspapers<span class="price">$0</span><br /><small>The news business has been upended quickly as the result of massive simultaneous shifts in traffic from social networks and mobile devices. The future of news was up in the air before these forces, and now it is more uncertain than ever. However, the motivation behind the shift to social, along with the constraints and opportunities of mobile computing, point the way to a viable newspaper product for the future.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Dramatic Newspapers<span class="price">$0</span><br /><small>Science, crime, medicine, archaeology, nature — if it’s interesting news, you’ll find it here. Stories like these may not always be the ones atop your news feed, but chances are they’re the ones you’ll actually want to read. Whether it’s stories of weird animals, grisly crimes, interstellar drama, or the just plain unbelievable, these are the most interesting news articles you’ll find anywhere.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Presidential Newspapers<span class="price">$0</span><br /><small>The concerns about the president’s actions also prompted Mr. McCabe to order the bureau’s team investigating Russia’s election interference to expand their scope to also investigate whether Mr. Trump had obstructed justice by firing Mr. Comey. They also were to examine if he had been working on behalf of Russia against American interests.</small></p></div>',
+]
+
+dramaDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Romeo and Juliet<span class="price">$5 (30% off)</span><br /><small>Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. It was among most popular plays of Shakespeare during his lifetime and along with Hamlet, is one of his most frequently performed plays.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Secret Life of Bees<span class="price">$4</span><br /><small>The Secret Life of Bees is a book by author Sue Monk Kidd. Set in 1964, it is a coming-of-age story about loss and betrayal. It received critical acclaim and was a New York Times bestseller. It won the 2004 Book Sense Book of the Year Awards, and was nominated for the Orange Broadband Prize for Fiction.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Fences<span class="price">$5</span><br /><small>Fences is a 1985 play by American playwright August Wilson. Set in the 1950s, it is the sixth in ten-part of Wilson, "Pittsburgh Cycle". Like all of the "Pittsburgh" plays, Fences explores the evolving African-American experience and examines race relations, among other themes.</small></p></div>',
+]
+  
+  function Mystery() {      
+      books = document.getElementById("boo")
+      books.innerHTML = ''
+      books.innerHTML += mysteryDivs [0]
+      books.innerHTML += mysteryDivs [1]
+      books.innerHTML += mysteryDivs [2]
+    /*alert("Activated!!!")*/
+      items = document.getElementsByClassName("item")
+      for (i=0; i<3; i=i+1) {
+        items[i].style.background = mysteryImages[i]
+        items[i].style.backgroundSize = '100% 100%'
+      }
+    } 
+
+function Newspapers() {
+      books = document.getElementById("boo")
+      books.innerHTML = ''
+      books.innerHTML += newspaperDivs [0]
+      books.innerHTML += newspaperDivs [1]
+      books.innerHTML += newspaperDivs [2]
+    /*alert("Operated!!!")*/
+      items = document.getElementsByClassName("item")
+        for (i=0; i<3; i=i+1) {
+          items[i].style.background = newspapersImages[i]
+          items[i].style.backgroundSize = '100% 100%'
+      }
+    } 
+
+function Drama() {
+      books =document.getElementById("boo")
+      books.innerHTML = ''
+      books.innerHTML += dramaDivs [0]
+      books.innerHTML += dramaDivs [1]
+      books.innerHTML += dramaDivs [2]
+    /*alert("Initiated!!!")*/
+      items = document.getElementsByClassName("item")
+        for (i=0; i<3; i=i+1) {
+          items[i].style.background = dramasImages[i]
+          items[i].style.backgroundSize = '100% 100%'
+      }
+    }
+    
+onclick=this.classList.toggle("show-description")
+</script>
+
+</body>
