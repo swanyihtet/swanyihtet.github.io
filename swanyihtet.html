@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<meta name="viewport" content="width=device-width, initial scale=1">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
 <script src="/assets/jquery.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
@@ -98,20 +98,14 @@ small {
   }
   div {
     margin: 20px 12px 0 12px;
-    height: 260px;
   }
   p {
     font-size: 12px;
     line-height: 24px;
   }
   small {
-    font-size: 12px;
+    font-size: 17px;
   }
- li {
-      display: block;
-      padding: 5px 50px 5px 50px;
-      font-family: 'Inconsolata', monospace;
-}
 }
 
 </style>
@@ -153,6 +147,8 @@ dramasImages = [
   'url("https://3oecq13pb7a518hqscs13jv9-wpengine.netdna-ssl.com/wp-content/uploads/2014/12/romeo-and-juliet.jpg")',
   'url("https://images-na.ssl-images-amazon.com/images/I/812WLoht5YL.jpg")',
   'url("https://pro2-bar-s3-cdn-cf.myportfolio.com/917f6d3c515079e48da4d0c714d0cfde/82980c05cdb59772530a3f6a_rw_1200.jpg?h=5b99358b97a9d572b0ab27096ae935a8")',
+  'url("https://images-na.ssl-images-amazon.com/images/I/A19Yd5xdWIL.jpg")',
+  'url("https://images-na.ssl-images-amazon.com/images/I/41d5jV8ofIL._SX342_.jpg")',
 ]
 
 mysteryDivs = [
@@ -172,6 +168,8 @@ dramaDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Romeo and Juliet<span class="price">$5 (30% off)</span><br /><small>Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. It was among most popular plays of Shakespeare during his lifetime and along with Hamlet, is one of his most frequently performed plays.</small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Secret Life of Bees<span class="price">$4</span><br /><small>The Secret Life of Bees is a book by author Sue Monk Kidd. Set in 1964, it is a coming-of-age story about loss and betrayal. It received critical acclaim and was a New York Times bestseller. It won the 2004 Book Sense Book of the Year Awards, and was nominated for the Orange Broadband Prize for Fiction.</small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Fences<span class="price">$5</span><br /><small>Fences is a 1985 play by American playwright August Wilson. Set in the 1950s, it is the sixth in ten-part of Wilson, "Pittsburgh Cycle". Like all of the "Pittsburgh" plays, Fences explores the evolving African-American experience and examines race relations, among other themes.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>The Outsiders<span class="price">$6</span><br /><small>The Outsiders is a coming-of-age novel by S. E. Hinton, first published in 1967 by Viking Press. Hinton was 15 when she started writing the novel but did most of the work when she was 16 and a junior in high school. Hinton was 18 when the book was published.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>The Silent Wife<span class="price">$5</span><br /><small>Todd Gilbert and Jodie Brett are in a bad place in their relationship. They have been together for over twenty years, and with no children to worry about there has been little to disrupt their affluent Chicago lifestyle. ...</small></p></div>',
 ]
   
   function Mystery() {      
@@ -209,9 +207,11 @@ function Drama() {
       books.innerHTML += dramaDivs [0]
       books.innerHTML += dramaDivs [1]
       books.innerHTML += dramaDivs [2]
+      books.innerHTML += dramaDivs [3]
+      books.innerHTML += dramaDivs [4]
     /*alert("Initiated!!!")*/
       items = document.getElementsByClassName("item")
-        for (i=0; i<3; i=i+1) {
+        for (i=0; i<5; i=i+1) {
           items[i].style.background = dramasImages[i]
           items[i].style.backgroundSize = '100% 100%'
       }
