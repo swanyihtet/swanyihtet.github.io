@@ -140,6 +140,7 @@ mysteryImages = [
       'url("https://images.theconversation.com/files/207374/original/file-20180221-132642-1uujcbr.jpg?ixlib=rb-1.1.0&rect=103%2C214%2C4489%2C2244&q=45&auto=format&w=1356&h=668&fit=crop")',
       'url("https://www.adazing.com/wp-content/uploads/2013/03/LOTR14.png")',
       'url("https://i.pinimg.com/originals/77/70/f9/7770f9a21a84df540e231f480e1f9b6c.jpg")',
+      'url("https://www.libertybooks.com/image/catalog/The%20complete%20novel%20Sherlock%20Holmes.jpg")',
 ]
 
 newspapersImages = [
@@ -158,6 +159,7 @@ mysteryDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Harry Potter<span class="price">$5 (40% off) </span><br /><small> Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")> <p>The Lord of Rings<span class="price">$6 (40% off) </span><br /><small>The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien. The story began as a sequel to Tolkiens 1937 fantasy novel The Hobbit, but eventually developed into a much larger work. </small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Percy Jackson<span class="price">$5 (40% off) </span><br /><small>Percy Jackson & the Olympians, often shortened to Percy Jackson, is a pentalogy of fantasy adventure novels written by American author Rick Riordan, and the first book series in the Camp Half-Blood Chronicles. Five supplementary books, along with three graphic novels, have also been released.</small></p></div>',
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Sherlock Holmes<span class="price">$6 (10% off) </span><br /><small>Traditionally, the canon of Sherlock Holmes consists of the 56 short stories and four novels written by Sir Arthur Conan Doyle. In this context, the term "canon" is an attempt to distinguish between original works of Doyle and subsequent works by other authors using the same characters..</small></p></div>',
 ]
 
 newspaperDivs = [
@@ -178,9 +180,10 @@ dramaDivs = [
       books.innerHTML += mysteryDivs [0]
       books.innerHTML += mysteryDivs [1]
       books.innerHTML += mysteryDivs [2]
+      books.innerHTML += mysteryDivs [3]
     /*alert("Activated!!!")*/
       items = document.getElementsByClassName("item")
-      for (i=0; i<3; i=i+1) {
+      for (i=0; i<4; i=i+1) {
         items[i].style.background = mysteryImages[i]
         items[i].style.backgroundSize = '100% 100%'
       }
