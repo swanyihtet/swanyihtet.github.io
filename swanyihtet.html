@@ -176,6 +176,7 @@ dramaDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Fences<span class="price">$5</span><br /><small>Fences is a 1985 play by American playwright August Wilson. Set in the 1950s, it is the sixth in ten-part of Wilson, "Pittsburgh Cycle". Like all of the "Pittsburgh" plays, Fences explores the evolving African-American experience and examines race relations, among other themes.</small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")><p>The Outsiders<span class="price">$6</span><br /><small>The Outsiders is a coming-of-age novel by S. E. Hinton, first published in 1967 by Viking Press. Hinton was 15 when she started writing the novel but did most of the work when she was 16 and a junior in high school. Hinton was 18 when the book was published.</small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")><p>The Silent Wife<span class="price">$5</span><br /><small>Todd Gilbert and Jodie Brett are in a bad place in their relationship. They have been together for over twenty years, and with no children to worry about there has been little to disrupt their affluent Chicago lifestyle. ...</small></p></div>',
+ ]
   
 scientificDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>The Time Machine<span class="price">$4</span><br /><small>The Time Machine is a science fiction novella by H. G. Wells, published in 1895 and written as a frame narrative. The work is generally credited with the popularization of the concept of time travel by using a vehicle that allows an operator to travel purposely and selectively forwards or backwards in time.</small></p></div>',
@@ -230,8 +231,8 @@ function Drama() {
 function Scientific() {
       books =document.getElementById("boo")
       books.innerHTML = ''
-      books.innerHTML += scientificDivs [0]
-      books.innerHTML += scientificDivs [1]
+      books.innerHTML += scientificDivs[0]
+      books.innerHTML += scientificDivs[1]
     /*alert("Initiated!!!")*/
       items.document.getElementsByClassName("item")
         for (i=0; i<2; i=i+1) {
@@ -240,7 +241,6 @@ function Scientific() {
       }
     }
     
-onclick=this.classList.toggle("show-description")
 </script>
 
 </body>
