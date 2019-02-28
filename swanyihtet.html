@@ -45,7 +45,7 @@ ul {
 }
 li {
       display: inline;
-      padding: 0px 50px 0px 50px;
+      padding: 0px 30px 0px 30px;
       font-family: 'Inconsolata', monospace;
 }
 p {
@@ -120,6 +120,7 @@ small {
   <li><button onclick=Mystery()>Mystery</button></li>
   <li><button onclick=Newspapers()>Newspapers</button></li>
   <li><button onclick=Drama()>Drama</button></li>
+  <li><button onclick=Scientific()>Scientific</button></li>
 </ul>
 
 <h1>Swan's Book Shop</h1>
@@ -151,6 +152,11 @@ dramasImages = [
   'url("https://images-na.ssl-images-amazon.com/images/I/41d5jV8ofIL._SX342_.jpg")',
 ]
 
+scientificImages = [
+  'url("https://i.pinimg.com/originals/ef/3f/74/ef3f74b3c112bdb3c69d6a6028f287fa.jpg")',
+  'url("https://www.jwkbooks.com/pictures/medium/17126_1.jpg")',
+]
+
 mysteryDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Harry Potter<span class="price">$5 (40% off) </span><br /><small> Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. </small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")> <p>The Lord of Rings<span class="price">$6 (40% off) </span><br /><small>The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien. The story began as a sequel to Tolkiens 1937 fantasy novel The Hobbit, but eventually developed into a much larger work. </small></p></div>',
@@ -170,6 +176,10 @@ dramaDivs = [
   '<div class="item" onclick=this.classList.toggle("show-description")><p>Fences<span class="price">$5</span><br /><small>Fences is a 1985 play by American playwright August Wilson. Set in the 1950s, it is the sixth in ten-part of Wilson, "Pittsburgh Cycle". Like all of the "Pittsburgh" plays, Fences explores the evolving African-American experience and examines race relations, among other themes.</small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")><p>The Outsiders<span class="price">$6</span><br /><small>The Outsiders is a coming-of-age novel by S. E. Hinton, first published in 1967 by Viking Press. Hinton was 15 when she started writing the novel but did most of the work when she was 16 and a junior in high school. Hinton was 18 when the book was published.</small></p></div>',
   '<div class="item" onclick=this.classList.toggle("show-description")><p>The Silent Wife<span class="price">$5</span><br /><small>Todd Gilbert and Jodie Brett are in a bad place in their relationship. They have been together for over twenty years, and with no children to worry about there has been little to disrupt their affluent Chicago lifestyle. ...</small></p></div>',
+  
+scientificDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>The Time Machine<span class="price">$4</span><br /><small>The Time Machine is a science fiction novella by H. G. Wells, published in 1895 and written as a frame narrative. The work is generally credited with the popularization of the concept of time travel by using a vehicle that allows an operator to travel purposely and selectively forwards or backwards in time.</small></p></div>',
+   'div class="item" onclick=this.classList.toggle("show-description")><p>The Left Hand of Darkness<span class="price">$5</span><br /><small>The Left Hand of Darkness is a science fiction novel by U.S. writer Ursula K. Le Guin, published in 1969. The novel became immensely popular and established status of Le Gun as a major author of science fiction.</small></p></div>',
 ]
   
   function Mystery() {      
@@ -213,6 +223,19 @@ function Drama() {
       items = document.getElementsByClassName("item")
         for (i=0; i<5; i=i+1) {
           items[i].style.background = dramasImages[i]
+          items[i].style.backgroundSize = '100% 100%'
+      }
+    }
+
+function Scientific() {
+      books =document.getElementById("boo")
+      books.innerHTML = ''
+      books.innerHTML += scientificDivs [0]
+      books.innerHTML += scientificDivs [1]
+    /*alert("Initiated!!!")*/
+      items.document.getElementsByClassName("item")
+        for (i=0; i<2; i=i+1) {
+          items[i].style.background = scientificImages[i]
           items[i].style.backgroundSize = '100% 100%'
       }
     }
