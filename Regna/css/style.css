@@ -1,6 +1,6 @@
 /*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  Theme Name: Swan
+  Theme URL: https://www.pixelstalk.net/wp-content/uploads/2016/05/Awesome-new-york-lights-wallpaper-hd.jpg
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
 */
@@ -10,11 +10,11 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Srisakdi', cursive;
 }
 
 a {
-  color: #2dc997;
+  color: white;
 }
 
 a:hover, a:active, a:focus {
@@ -29,7 +29,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Srisakdi', cursive;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -69,13 +69,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:focus {
   background: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: white;
   outline: none;
 }
 
 .back-to-top:hover {
   background: #2dc997;
-  color: #fff;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Srisakdi', cursive;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(http://newbritainsymphony.org/wp-content/uploads/2015/09/AdobeStock_80069265-Singing-Strings.jpg) top center;
   background-size: cover;
   position: relative;
 }
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: #fff;
+  color: gray;
 }
 
 @media (max-width: 768px) {
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #eee;
+  color: gray;
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -214,12 +214,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
-  color: #fff;
+  color: gray;
 }
 
 #hero .btn-get-started:hover {
   background: #2dc997;
-  border: 2px solid #2dc997;
+  border: 2px solid gray;
 }
 
 /*--------------------------------------------------------------
@@ -272,6 +272,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f107";
   position: absolute;
   right: 15px;
+  font-color: gray;
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -298,11 +299,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: gray;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 13px;
+  font-color: gray;
   outline: none;
 }
 
@@ -485,33 +487,35 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-weight: 700;
   margin-bottom: 5px;
+  font-color: green;
 }
 
 .section-header .section-description {
   text-align: center;
   padding-bottom: 40px;
-  color: #999;
+  color: white;
 }
 
 /* About Us Section
 --------------------------------*/
 #about {
-  background: #fff;
+  background: url(https://images.homedepot-static.com/productImages/f5b5905b-87c0-4d36-a06d-a7f13b3c3eac/svn/red-mahogany-luxury-vinyl-planks-63582-0-64_1000.jpg);
   padding: 80px 0;
 }
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
+  background: url(https://i.pinimg.com/originals/e9/8c/58/e98c5864167008c409f202f6f8560116.jpg) center top no-repeat;
   margin-bottom: 10px;
+  background-size: 100% 100%;
 }
 
 #about .about-container .content {
-  background: #fff;
+  background: url(https://www.rarewoodsusa.com/wp-content/uploads/2018/06/mahogany-brazil.jpg);
 }
 
 #about .about-container .title {
-  color: #333;
+  color: white;
   font-weight: 700;
   font-size: 32px;
 }
@@ -524,6 +528,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container p {
   line-height: 26px;
+  color: white;
 }
 
 #about .about-container p:last-child {
@@ -531,14 +536,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box {
-  background: #fff;
-  background-size: cover;
+  background: url(https://www.rarewoodsusa.com/wp-content/uploads/2018/06/mahogany-brazil.jpg);
+  background-size: 100% 100%;
   padding: 0 0 30px 0;
 }
 
 #about .about-container .icon-box .icon {
   float: left;
-  background: #fff;
+  background: url(https://images.homedepot-static.com/productImages/f5b5905b-87c0-4d36-a06d-a7f13b3c3eac/svn/red-mahogany-luxury-vinyl-planks-63582-0-64_1000.jpg);
   width: 64px;
   height: 64px;
   display: flex;
@@ -547,11 +552,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-direction: column;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid #2dc997;
+  border: 2px solid #000000;
 }
 
 #about .about-container .icon-box .icon i {
-  color: #2dc997;
+  color: white;
   font-size: 24px;
 }
 
@@ -564,10 +569,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box .title a {
-  color: #111;
+  color: white;
 }
 
 #about .about-container .icon-box .description {
+	color: white;
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
@@ -576,14 +582,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  background: url(https://images.homedepot-static.com/productImages/f5b5905b-87c0-4d36-a06d-a7f13b3c3eac/svn/red-mahogany-luxury-vinyl-planks-63582-0-64_1000.jpg);
   padding: 80px 0 60px 0;
+  color: white;
 }
 
 #facts .counters span {
   font-size: 48px;
   display: block;
-  color: #2dc997;
+  color: white;
 }
 
 #facts .counters p {
@@ -591,12 +598,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 0 20px 0;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+  color: white;
 }
 
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
+  background: url(https://images.homedepot-static.com/productImages/f5b5905b-87c0-4d36-a06d-a7f13b3c3eac/svn/red-mahogany-luxury-vinyl-planks-63582-0-64_1000.jpg);
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -608,7 +616,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #e6e6e6;
   height: 200px;
   position: relative;
-  background: #fafafa;
+  background: url(https://images.homedepot-static.com/productImages/f5b5905b-87c0-4d36-a06d-a7f13b3c3eac/svn/red-mahogany-luxury-vinyl-planks-63582-0-64_1000.jpg);
 }
 
 #services .icon {
@@ -669,7 +677,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.worshipbanduniversity.com/uploads/2/6/9/4/26948116/4046609_orig.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -714,30 +722,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Portfolio Section
 --------------------------------*/
-#portfolio {
-  background: #f7f7f7;
+#Musical  {
+  text-color: white;
+  background: url(https://images.homedepot-static.com/productImages/f5b5905b-87c0-4d36-a06d-a7f13b3c3eac/svn/red-mahogany-luxury-vinyl-planks-63582-0-64_1000.jpg);
   padding: 80px 0;
 }
 
-#portfolio #portfolio-wrapper {
-  padding-right: 15px;
+#Musical #portfolio-wrapper {
+  padding-right: 20px;
+  color: white;
 }
 
-#portfolio #portfolio-flters {
+#Musical #portfolio-flters {
   padding: 0;
   margin: 0 0 45px 0;
   list-style: none;
   text-align: center;
+  color: white;
 }
 
-#portfolio #portfolio-flters li {
+#Musical #instruments li {
   cursor: pointer;
   margin: 0 10px;
   display: inline-block;
   padding: 10px 22px;
   font-size: 12px;
   line-height: 20px;
-  color: #666666;
+  color: white;
   border-radius: 4px;
   text-transform: uppercase;
   background: #fff;
@@ -745,12 +756,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  background: #2dc997;
-  color: #fff;
+#Musical #instruments li:hover, #Musical #instruments li.filter-active {
+  background: white;
+  color: white;
 }
 
-#portfolio .portfolio-item {
+#Musical .portfolio-item {
   position: relative;
   height: 200px;
   overflow: hidden !important;
@@ -759,20 +770,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(1);
 }
 
-#portfolio .portfolio-item a {
+#Musical .portfolio-item a {
   display: block;
   margin-right: 15px;
 }
 
-#portfolio .portfolio-item img {
+#Musical .portfolio-item img {
   position: relative;
   top: 0;
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#portfolio .portfolio-item .details {
+#Musical .portfolio-item .details {
   height: 50px;
-  background: #2dc997;
+  background: black;
   position: absolute;
   width: 100%;
   height: 50px;
@@ -780,7 +791,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#portfolio .portfolio-item .details h4 {
+#Musical .portfolio-item .details h4 {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -788,76 +799,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-#portfolio .portfolio-item .details span {
+#Musical .portfolio-item .details span {
   display: block;
   color: #fff;
   font-size: 13px;
   padding-left: 8px;
 }
 
-#portfolio .portfolio-item:hover .details {
+#Musical .portfolio-item:hover .details {
   bottom: 0;
 }
 
-#portfolio .portfolio-item:hover img {
+#Musical .portfolio-item:hover img {
   top: -30px;
 }
 
-/* Team Section
---------------------------------*/
-#team {
-  background: #fff;
-  padding: 80px 0 60px 0;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-}
-
-#team .member .pic img {
-  max-width: 100%;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member .social {
-  margin-top: 15px;
-}
-
-#team .member .social a {
-  color: #b3b3b3;
-}
-
-#team .member .social a:hover {
-  color: #2dc997;
-}
-
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
 
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
+  background: url(https://images.homedepot-static.com/productImages/f5b5905b-87c0-4d36-a06d-a7f13b3c3eac/svn/red-mahogany-luxury-vinyl-planks-63582-0-64_1000.jpg);
   padding: 80px 0 40px 0;
 }
 
@@ -867,12 +828,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .info {
-  color: #333333;
+  color: white;
 }
 
 #contact .info i {
   font-size: 32px;
-  color: #2dc997;
+  color: white;
   float: left;
 }
 
@@ -895,7 +856,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   display: inline-block;
   background: #333;
-  color: #fff;
+  color: white;
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -952,7 +913,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #2dc997;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: white;
   transition: 0.4s;
 }
 
