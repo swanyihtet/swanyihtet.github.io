@@ -89,73 +89,73 @@ function draw() {
   if (overalltime > 0) {
   
   background(170);
-  circle(x*s,y,70*s);
+  circle(x*s,y*s,70*s);
   fill(225);
   
   
-  circle(x2*s,y2,70*s);
+  circle(x2*s,y2*s,70*s);
   fill(98);
   x2 = x2 + speed*direction_x
   y2 = y2 + 10*direction_y
   
-  if (x2 > width || x2 <0) {
+  if (x2*s > width || x2*s <0) {
     direction_x = direction_x * -1
   }
   
-  if (y2 > height || y2 < 0) {
+  if (y2*s > height || y2*s < 0) {
     direction_y = direction_y * -1
   }
   
   for (i=0 ; i<3; i=i+1) {
-      circle(x3[i]*s,y3[i],30*s);
+      circle(x3[i]*s,y3[i]*s,30*s);
       fill(5);
 
-      if (dist(x,y,x3[i],y3[i])<70+30) {
+      if (dist(x*s,y*s,x3[i]*s,y3[i]*s)<70+30) {
         score=score+0.1
       }
   }
   
   for (i=0 ; i<3; i=i+1) {
-      circle(x4[i]*s,y4[i],30*s);
+      circle(x4[i]*s,y4[i]*s,30*s);
       fill(5);
 
-      if (dist(x,y,x4[i],y4[i])<70+30) {
+      if (dist(x*s,y*s,x4[i]*s,y4[i]*s)<70+30) {
       score=score-0.1
       }
   }
   
   textSize(25)
-  text("Score: " + score.toFixed(0),315*s, 640)
+  text("Score: " + score.toFixed(0),315*s, 640*s)
   
-  if (dist(x,y,x2,y2)<70+70) {
+  if (dist(x*s,y*s,x2*s,y2*s)<70+70) {
     score=score+0.1
   }
   
   textSize(25)
-  text("Time: " + time.toFixed(0),315*s,90)
+  text("Time: " + time.toFixed(0),315*s,90*s)
   time = time - 0.02
   
   if (time < 0 && (score>=min && score<=max)){
     fill(34,139,34);
-    circle(x5*s,y5,15*s);
+    circle(x5*s,y5*s,15*s);
     time = time + 0.02
   }
   
   if (time < 0 && (score<=min || score>=max)){
     fill(255,0,0);
-    circle(x6*s,y6,15*s);
+    circle(x6*s,y6*s,15*s);
     time = time + 0.02
   }
     
   
   textSize(25)
-  text("Range: " + min.toFixed(0) + " <= score <= " + max.toFixed(0), 238*s,60)
+  text("Range: " + min.toFixed(0) + " <= score <= " + max.toFixed(0), 238*s,60*s)
   
   textSize(25)
-  text("Level: "+ level, 315*s, 670)
+  text("Level: "+ level, 315*s, 670*s)
   
   textSize(25)
-    text("Overall Time: " +overalltime.toFixed(0), 275*s, 700)
+    text("Overall Time: " +overalltime.toFixed(0), 275*s, 700*s)
     overalltime = overalltime - 0.02
     
   }
@@ -168,14 +168,14 @@ function draw() {
 }
 
 function mouseClicked() {
-  if ((abs(x5*s-mouseX) < 50) && (abs(y5-mouseY) < 50)) {
+  if ((abs(x5*s-mouseX) < 50) && (abs(y5*s-mouseY) < 50)) {
     level = level + 1
     time = 5
     min = random(-20,-15)
     max = random(-14,-10 )
     speed = speed + 10
   }
-  if ((abs(x6*s-mouseX) < 50) && (abs(y6-mouseY) <50)) {
+  if ((abs(x6*s-mouseX) < 50) && (abs(y6*s-mouseY) <50)) {
     level = level - 1
     time = 5
     min = random(-9,-1)
